@@ -21,7 +21,7 @@
  */
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
-$db = parse_url($_ENV["DATABASE"]);
+$db = parse_url('mysql://u0b1afubh7pi50iz:PUhoZ3P1JRQ7xE3qpc9z@bmluhg4qlwzxyyadcyfy-mysql.services.clever-cloud.com:3306/bmluhg4qlwzxyyadcyfy');
 /** The name of the database for WordPress */
 define('DB_NAME', trim($db["path"],"/"));
 /** MySQL database username */
@@ -51,14 +51,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define('AUTH_KEY', getenv('AUTH_KEY'));
-define('SECURE_AUTH_KEY', getenv('SECURE_AUTH_KEY'));
-define('LOGGED_IN_KEY', getenv('LOGGED_IN_KEY'));
-define('NONCE_KEY', getenv('NONCE_KEY'));
-define('AUTH_SALT', getenv('AUTH_SALT'));
-define('SECURE_AUTH_SALT', getenv('SECURE_AUTH_SALT'));
-define('LOGGED_IN_SALT', getenv('LOGGED_IN_SALT'));
-define('NONCE_SALT', getenv('NONCE_SALT'));
+define( 'AUTH_KEY',         'vO]iadf/dJj8Y4__]@uCfOeyI[d+90#EyfI[=CeB*x>ASl]f?KrH_+%9>Vs;ggh@' );
+define( 'SECURE_AUTH_KEY',  'M2ES2}Pb5:nLq:~*]4TkswTaeLrQQ99hCV4so%]Z,W^q$/.9u-V);ZZHfrW& S{2' );
+define( 'LOGGED_IN_KEY',    'Mf)=XIQx8?cvqq(x[w$Oja!biJC-VGGr(M%XNB:|=:M!Pc[`4_&*#F$JN${*Tl&n' );
+define( 'NONCE_KEY',        '~oD<OSsoS#2+f}BSt+N@o_ZtfqiA7$lfB#q0}vH#-m*|G|6Xd)Wx@GLCYTO-th$1' );
+define( 'AUTH_SALT',        '!C2O^bx >p[-zv4g!UHW,1nXonp?jkr4k7V?:r.<nE*~!{B,56uGEDOkQQ^de&eH' );
+define( 'SECURE_AUTH_SALT', 'BAq6Z1h&#`pT=7U}Ca!X;)SslPJe~zGbQX$AuDhc8ZiJF^77_S*M.H#bXMN*9*/i' );
+define( 'LOGGED_IN_SALT',   'zz7`Z/W3|6TZ8~b|0g9q:kB%Re[0*:h6`!/ZAt]KErs5Ax^k3-bU:|5#PQ+k5IaL' );
+define( 'NONCE_SALT',       'u.J4Fyp!zct!F5ivc:+4rc+rWg%pt~u-y8gNIq.x-2!m] irMwg`[+F8:8a48}3{' );
 /**#@-*/
 
 /**
